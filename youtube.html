@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+        }
+        .right{
+            display: flex;
+            gap: 15px;
+        }
+        .left_child{
+            width: 20px;
+        }
+        .middle{
+            flex: 1;
+             display: flex;
+            justify-content:center;
+            margin: 5px;
+        }
+        .search{
+            width: 450px;
+        }
+
+        .menu-icon{
+            width: 15px;
+            height: 4px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .bar{
+            background-color:black;
+            width: 15px;
+            height: 4px;
+            margin: 5px;
+            border: 2px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <div class="left section">
+                 <div class="menu-icon">
+                   <div class="bar"></div>
+                   <div class="bar"></div>
+                   <div class="bar"></div>
+                </div>
+                <div>
+                   <img height="20px" width="30px" src="./youtube.png" alt="">
+                </div>
+               
+            </div>
+            <div class="middle section">
+                <div>
+                <input class="search" type="text" placeholder="Search">
+                <button type="submit"><img height="10px" width="20px" src="./search.png" alt=""></button>
+               </div>
+            </div>
+            <div class="right section">
+                <div><img class="left_child" src="./video.png" alt=""></div>
+                <div><img class="left_child" src="./bell.png" alt=""></div>
+                <div><img class="left_child" src="./profile.png" alt=""></div>
+            </div>
+        </div>
+    </nav>
+
+<script  src="./youtube.js">
+
+    </script>
+
+</body>
+
+</html>
